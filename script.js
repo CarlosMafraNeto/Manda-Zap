@@ -1,6 +1,5 @@
-function mandaZap(Elemento) {
-    let texts = Elemento.firstElementChild.innerText ;
-    let ero = prompt("Para qual número gostaria de enviar essa mensagem?")
-    let zapLink = 'https://api.whatsapp.com/send?phone=+557197215228&text=Me mame '
-      window.open(zapLink)
+function mandaZap(elemento) {
+    let texto = elemento.firstElementChild.innerText
+    let numero = prompt("Qual é o número?")
+    window.open(`https://api.whatsapp.com/send?phone=55${numero}&text=${texto}`)
     }
